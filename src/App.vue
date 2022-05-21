@@ -1,21 +1,65 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import data from "./data/data.json";
+import { defineComponent } from "vue";
+import ProfileSection from "./components/ProfileSection.vue";
+import WorkAndEduSection from "./components/workAndEduSection.vue";
+import ProjectSection from "./components/ProjectSection.vue";
+
+
+export default defineComponent({
+  components: {
+    ProfileSection,
+    WorkAndEduSection,
+    ProjectSection,
+  },
+  data() {
+    return {
+      data: data,
+    };
+  },
+});
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <ProfileSection :profile="data.profile" />
+  <WorkAndEduSection :workAndEdu="data.workAndEdu" />
+  <ProjectSection classification="项目经历" :project="data.project" />
+  <ProjectSection classification="开源项目" :project="data.openSource" />
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Microsoft YaHei";
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 20px;
+}
+
+i {
+  padding: 2px;
+  font-weight: 580;
+  color: #ff6600;
+  font-style: normal;
 }
 </style>

@@ -1,0 +1,83 @@
+{
+  "profile": {
+    "name": "苏剑云",
+    "gender": "男",
+    "age": 26,
+    "targetPost": "前端开发工程师",
+    "phone": 18428333846,
+    "wechat": "jianyunsama2020",
+    "email": "sujianyun2020@163.com",
+    "serviceYear": 1.5
+  },
+  "workAndEdu": [
+    {
+      "title": "51WORLD",
+      "workTime": "2020年8月~2022年3月",
+      "content": [
+        "参与制作公司前端可视化大屏项目，与UE4项目对接。",
+        "独立负责公司的H5开发，完善开发流程，编写开发文档。",
+        "负责UE4项目程序部分的制作。"
+      ]
+    },
+    {
+      "title": "成都理工大学",
+      "workTime": "2015年9月~2019年7月",
+      "major": "通信工程",
+      "type": "全日制本科"
+    }
+  ],
+  "project": [
+    {
+      "title": "前端可视化项目",
+      "link": "",
+      "content": [
+        "技术栈：<i>Vue2</i>/<i>Vuex</i>/<i>axios</i>/<i>Webpack</i>/<i>ECharts</i>",
+        "UI设计的高保真",
+        "UI设计的高保真",
+        "UI设计的高保真",
+        "UI设计的高保真"
+      ]
+    },
+    {
+      "title": "H5全景漫游",
+      "link": "",
+      "content": [
+        "技术栈：<i>React</i>/<i>Webpack</i>/<i>Krpano</i>",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发"
+      ]
+    }
+  ],
+  "openSource": [
+    {
+      "title": "Jira",
+      "link": "http://kenkumo.gitee.io/",
+      "content": [
+        "技术栈：<i>React</i>/<i>Reack Hook</i>/<i>Mock</i>/<i>Webpack</i>/<i>TypeScript</i>",
+        "UI设计的高保真",
+        "UI设计的高保真",
+        "UI设计的高保真",
+        "UI设计的高保真"
+      ]
+    },
+    {
+      "title": "UI嘎嘎嘎",
+      "link": "http://kenkumo.gitee.io/",
+      "content": [
+        "技术栈：<i>React</i>/<i>Webpack</i>/<i>Krpano</i>",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发",
+        "独立完成H5全景漫游的开发"
+      ]
+    }
+  ],
+  "technologyStack": {
+    "title": "常用技术栈",
+    "stackList": [
+      "熟练使用<i>React</i>全家桶"
+    ]
+  }
+}
