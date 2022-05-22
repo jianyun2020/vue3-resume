@@ -18,6 +18,7 @@ export default defineComponent({
     <div v-if="item.content">
       <div class="title">
         <h2 class="subtitle">{{ item.title }}</h2>
+        <span>{{ item.position }}</span>
         <span>{{ item.workTime }}</span>
       </div>
       <p class="detail" v-for="detail in item.content">

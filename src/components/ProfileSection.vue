@@ -24,12 +24,20 @@ export default defineComponent({
       }}
       | 工作年限：{{ profile?.serviceYear }}年
     </p>
+    <p>
+      <a :href="profile?.onlineResume" target="__blank">在线简历：{{ profile?.onlineResume }} </a> | <a :href="profile?.github" target="__blank">Github： {{ profile?.github }}</a>
+    </p>
   </div>
 </template>
 
 <style scoped>
 p {
   color: #666;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
 }
 
 </style>

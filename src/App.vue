@@ -25,6 +25,7 @@ export default defineComponent({
   <WorkAndEduSection :workAndEdu="data.workAndEdu" />
   <ProjectSection classification="项目经历" :project="data.project" />
   <ProjectSection classification="开源项目" :project="data.openSource" />
+  <ProjectSection classification="常用技术栈" :project="data.technologyStack" />
 </template>
 
 <style>
@@ -59,7 +60,10 @@ p {
 i {
   padding: 2px;
   font-weight: 580;
-  color: #ff6600;
+  /* PDF使用 */
+  color: #333; 
+  /* 网页使用 */
+  color: #FF6600;
   font-style: normal;
 }
 </style>
