@@ -16,13 +16,13 @@ export default defineComponent({
   <Title :title-name="profile?.name" />
   <div class="content">
     <p>
-      {{ profile?.gender }} | {{ profile?.age }}岁 | {{ profile?.targetPost }}
+      {{ profile?.gender }} | {{ profile?.age }}岁 | {{ profile?.targetPost }} | 工作年限：{{ profile?.serviceYear }}年
     </p>
     <p>
       手机：{{ profile?.phone }} | 微信：{{ profile?.wechat }} | 邮箱：{{
         profile?.email
       }}
-      | 工作年限：{{ profile?.serviceYear }}年
+      
     </p>
     <p>
       <a :href="profile?.onlineResume" target="__blank">在线简历：{{ profile?.onlineResume }} </a> | <a :href="profile?.github" target="__blank">Github： {{ profile?.github }}</a>

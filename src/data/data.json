@@ -5,10 +5,10 @@
     "age": 26,
     "targetPost": "前端开发工程师",
     "phone": 18428333846,
-    "wechat": "jianyunsama2020",
+    "wechat": "jianyun2096",
     "email": "sujianyun2020@163.com",
     "serviceYear": 1.5,
-    "onlineResume": "http://kenkumo.gitee.io",
+    "onlineResume": "https://jianyun.site",
     "github": "https://github.com/jianyun2020"
   },
   "workAndEdu": [
@@ -54,25 +54,13 @@
   ],
   "openSource": [
     {
-      "title": "Jira",
-      "link": "http://kenkumo.gitee.io/",
+      "title": "React-Jira",
+      "link": "",
       "content": [
-        "技术栈：<i>React</i>/<i>Hooks</i>/<i>Mock</i>/<i>Webpack</i>/<i>TypeScript</i>",
-        "UI设计的高保真",
-        "UI设计的高保真",
-        "UI设计的高保真",
-        "UI设计的高保真"
-      ]
-    },
-    {
-      "title": "UI嘎嘎嘎",
-      "link": "http://kenkumo.gitee.io/",
-      "content": [
-        "技术栈：<i>React</i>/<i>Webpack</i>/<i>Krpano</i>",
-        "独立完成H5全景漫游的开发",
-        "独立完成H5全景漫游的开发",
-        "独立完成H5全景漫游的开发",
-        "独立完成H5全景漫游的开发"
+        "技术栈：<i>React</i>/<i>Hook</i>/<i>Mock</i>/<i>Webpack</i>/<i>TypeScript</i>",
+        "为了练习<i>Hook</i>、<i>TypeScript</i>",
+        "使用<i>Mock</i>模拟数据，用<i>React Query</i>来模拟获取数据",
+        "模拟实现Jira的小部分功能"
       ]
     }
   ],
@@ -81,7 +69,7 @@
       "title": "",
       "link": "",
       "content": [
-        "熟练掌握<i>React</i>全家桶，包括<i>Hooks</i>、<i>ReactRouter</i>、<i>Redux</i>等",
+        "熟练掌握<i>React</i>全家桶，包括<i>Hook</i>、<i>ReactRouter</i>、<i>Redux</i>等",
         "熟练掌握<i>JavaScript</i>、<i>TypeScript</i>、<i>HTML5</i>和<i>CSS3</i>"
       ]
     }

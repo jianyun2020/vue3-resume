@@ -54,7 +54,7 @@ p {
 }
 
 .content {
-  margin: 20px;
+  margin: 14px;
 }
 
 i {

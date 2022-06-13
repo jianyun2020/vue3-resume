@@ -45,7 +45,7 @@ export default defineComponent({
 .subtitle {
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #666;
 }
 
 span {
