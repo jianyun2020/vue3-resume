@@ -26,6 +26,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
+    
     - name: Deploy
       	# 将构建产物 commit 到一个分支上，用于发布静态站点资源
       	# https://github.com/peaceiris/actions-gh-pages
