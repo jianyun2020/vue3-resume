@@ -34,7 +34,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Use Node.js
+      - name: install nodejs
       	# 配置 Node 执行环境（当前构建的服务器默认没有 Node 环境，可以通过 Action 安装 Node）
       	# https://github.com/actions/setup-node
         uses: actions/setup-node@v1
