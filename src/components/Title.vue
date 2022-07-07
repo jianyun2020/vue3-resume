@@ -14,7 +14,7 @@
 <style scoped>
   .title {
     position: relative;
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .title::after {

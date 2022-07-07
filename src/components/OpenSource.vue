@@ -1,9 +1,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import QrcodeVue from 'qrcode.vue'
-
 import Title from "./Title.vue";
-
 export default defineComponent({
   components: {
     Title,
@@ -21,15 +19,11 @@ export default defineComponent({
   <div class="content" v-for="item in project">
       <div class="title">
         <h2 class="subtitle">{{ item.title }}</h2>
-        <span>{{ item.startTime }} ~ {{item.endTime}}</span>
       </div>
     <div class="sub-content">
       <div>
-        <p class="detail" v-for="detail in item.contents">
-          <div class="third-content">
-            <span>{{detail.subtitle}}：</span>
-            <span v-html="detail.content"></span>
-          </div>
+        <p class="detail" v-for="detail in item.content">
+          <p v-html="detail"></p>
         </p>
       </div>
       <div v-if="item.link">
@@ -42,52 +36,32 @@ export default defineComponent({
 </template>
 
 <style scoped>
-
 .title {
   display: flex;
   justify-content: space-between;
 }
-
 .subtitle {
   font-size: 20px;
   font-weight: 600;
   color: #666;
 }
-
-span {
-  color: #666;
-  
-}
-
 .sub-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .detail {
   color: #666;
 }
-
-.third-content {
-  margin: 8px 0;
-}
-
-.third-content span:first-child {
-  font-weight: 550;
-}
-
 a {
   position: relative;
 }
-
 .qrcode {
   width: 100px;
   height: 100px;
   cursor: pointer;
   margin: 10px 0;
 }
-
 a::after {
   content: '点击可打开Demo';
   position: absolute;
@@ -98,5 +72,4 @@ a::after {
   text-align: center;
   color: #666;
 }
-
 </style>

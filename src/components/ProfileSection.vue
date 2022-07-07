@@ -15,29 +15,42 @@ export default defineComponent({
 <template>
   <Title :title-name="profile?.name" />
   <div class="content">
-    <p>
-      {{ profile?.gender }} | {{ profile?.age }}岁 | {{ profile?.targetPost }} | 工作年限：{{ profile?.serviceYear }}年 | <a :href="profile?.onlineResume" target="__blank">在线简历：{{ profile?.onlineResume }} </a>
-    </p>
-    <p>
-      手机：{{ profile?.phone }} | 微信：{{ profile?.wechat }} | 邮箱：{{
-        profile?.email
-      }}
-      
-    </p>
-    <p>
-       <!-- | <a :href="profile?.github" target="__blank">Github： {{ profile?.github }}</a> -->
-    </p>
+    <ul class="profile">
+      <li>{{ profile?.gender }}</li>
+      <li>{{ profile?.age }}岁</li>
+      <li>{{ profile?.targetPost }}</li>
+      <li>
+        <a :href="profile?.targetPost">在线简历：{{ profile?.onlineResume }}</a>
+      </li>
+    </ul>
+    <ul class="profile">
+      <li>手机：{{ profile?.phone }}</li>
+      <li>微信：{{ profile?.wechat }}</li>
+      <li>邮箱：{{ profile?.email }}</li>
+    </ul>
   </div>
 </template>
 
 <style scoped>
-p {
+.profile {
+  display: flex;
+  flex-wrap: wrap;
   color: #666;
+  margin: 8px 0;
+}
+
+.profile li:not(:first-child) {
+  position: relative;
+}
+
+.profile li:not(:first-child)::before {
+  content: "|";
+  opacity: 0.6;
+  margin: 0 8px;
 }
 
 a {
   color: #666;
   text-decoration: none;
 }
-
 </style>

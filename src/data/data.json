@@ -31,36 +31,55 @@
   ],
   "project": [
     {
-      "title": "数据可视化项目",
+      "title": "XXX数据可视化项目",
+      "startTime": "2021年11月",
+      "endTime": "2022年1月",
       "link": "",
-      "content": [
-        "技术栈：<i>React</i>/<i>Redux</i>/<i>axios</i>/<i>Webpack</i>/<i>ECharts</i>",
-        "根据UI设计的高保真页面编写相关组件",
-        "和数据中台对接数据并展示到页面",
-        "根据制作文档和美术配合制作相关场景特效",
-        "完成前端和UE4场景的数据及功能交互"
+      "contents": [
+        {
+          "subtitle": "项目介绍",
+          "content": "该项目是为了打造智慧园区，赋能产业创新发展和服务体验升级而衍生出的部分项目。其园区场景通过UE4（虚幻4）还原园区3D场景，通过前端展示各种数据以及与3D场景进行交互，达到现实与虚拟场景实时交互结合的目的。"
+        },
+        {
+          "subtitle": "涉及到的技术",
+          "content": "主要使用了<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>Axios</i>、<i>React Query</i>、<i>Webpack</i>、<i>ECharts</i>等技术。"
+        },
+        {
+          "subtitle": "工作内容",
+          "content": "根据UI设计的高保真编写页面，并提取公共组件，同时实时跟进客户反馈。与数据中台对接数据确保数据连通，防止不必要的bug产生。接入SuperAPI（公司内部的JS库），完成与UE4场景的交互与通信。配合特效团队和美术团队实现相关特效的程序功能，并编写程序调用接口。"
+        }
       ]
     },
     {
-      "title": "VR全景漫游",
+      "title": "移动案场",
+      "startTime": "2020年8月",
+      "endTime": "2022年3月",
       "link": "",
-      "content": [
-        "技术栈：<i>React</i>/<i>Webpack</i>/<i>Krpano</i>",
-        "从UE4场景中截取全景图片",
-        "用Krpano工具处理全景图片",
-        "根据制作脚本制作全景漫游"
+      "contents": [
+        {
+          "subtitle": "项目介绍",
+          "content": "公司内部地产相关项目的衍生项目，通过全景漫游展示项目地块以及样板间的内容，效果与720云类似。"
+        },
+        {
+          "subtitle": "涉及到的技术",
+          "content": "主要使用了<i>React</i>、<i>Webpack</i>、<i>Krpano</i>等技术"
+        },
+        {
+          "subtitle": "工作内容",
+          "content": "从UE4制作的3D虚拟场景中渲染项目所需的无污染全景图片，通过Krpano提供的全景图处理工具对图片进行处理，同时根据项目脚本对重点地点进行热点标注，完成相应的交互功能。最终完成项目并上线。期间主动向美术组和UE4程序的同事学习如何从场景渲染无污染全景图片，极大的减少了沟通和排期的时间成本，因此缩减了约30%的项目工期。"
+        }
       ]
     }
   ],
   "openSource": [
     {
       "title": "React-Jira",
-      "link": "",
+      "link": "https://jira.jianyun.site",
+      "startTime": "",
+      "endTime": "",
       "content": [
-        "技术栈：<i>React</i>/<i>Hook</i>/<i>Mock</i>/<i>Webpack</i>/<i>TypeScript</i>",
-        "为了练习<i>Hook</i>、<i>TypeScript</i>",
-        "使用<i>Mock</i>模拟数据，用<i>React Query</i>来模拟获取数据",
-        "模拟实现Jira的小部分功能"
+        "项目介绍：该项目仿照Jira Software，实现了其中部分功能。",
+        "技术栈：<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>React Query</i>、<i>Webpack</i>、<i>TypeScript</i>"
       ]
     }
   ],
@@ -69,8 +88,9 @@
       "title": "",
       "link": "",
       "content": [
-        "熟练掌握<i>React</i>全家桶，包括<i>Hook</i>、<i>ReactRouter</i>、<i>Redux</i>等",
-        "熟练掌握<i>JavaScript</i>、<i>TypeScript</i>、<i>HTML5</i>和<i>CSS3</i>"
+        "熟练掌握<i>React</i>全家桶，包括<i>Hooks</i>、<i>React Router</i>、<i>Redux</i>、<i>React Query</i>等技术的使用",
+        "熟练掌握<i>JavaScript</i>、<i>TypeScript</i>、<i>HTML5</i>和<i>CSS3</i>等技术的使用",
+        "掌握<i>Axios</i>、<i>Webpack</i>、<i>Less</i>、<i>Sass</i>、<i>Styled Components</i>等技术的使用"
       ]
     }
   ]

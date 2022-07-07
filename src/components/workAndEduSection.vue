@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <Title title-name="工作和教育经历" />
+  <Title title-name="工作及教育经历" />
   <div class="content" v-for="item in workAndEdu">
     <div v-if="item.content">
       <div class="title">
@@ -43,7 +43,7 @@ export default defineComponent({
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #666;
 }

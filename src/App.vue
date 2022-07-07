@@ -4,13 +4,15 @@ import { defineComponent } from "vue";
 import ProfileSection from "./components/ProfileSection.vue";
 import WorkAndEduSection from "./components/workAndEduSection.vue";
 import ProjectSection from "./components/ProjectSection.vue";
+import OpenSource from "./components/OpenSource.vue";
 
 export default defineComponent({
   components: {
     ProfileSection,
     WorkAndEduSection,
     ProjectSection,
-  },
+    OpenSource
+},
   data() {
     return {
       data: data,
@@ -23,8 +25,8 @@ export default defineComponent({
   <ProfileSection :profile="data.profile" />
   <WorkAndEduSection :workAndEdu="data.workAndEdu" />
   <ProjectSection classification="项目经历" :project="data.project" />
-  <ProjectSection classification="开源项目" :project="data.openSource" />
-  <ProjectSection classification="常用技术栈" :project="data.technologyStack" />
+  <OpenSource classification="开源项目" :project="data.openSource" />
+  <OpenSource classification="常用技术栈" :project="data.technologyStack" />
 </template>
 
 <style>
@@ -32,13 +34,16 @@ export default defineComponent({
   margin: 0;
   padding: 0;
 }
+ul,li {
+  list-style: none;
+}
 body {
   background-color: #eee;
   margin: 20px 0;
 }
 
 p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 #app {
@@ -65,7 +70,7 @@ p {
 }
 
 .content {
-  margin: 14px;
+  margin: 10px;
 }
 
 i {
