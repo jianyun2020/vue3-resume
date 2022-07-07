@@ -5,7 +5,6 @@ import ProfileSection from "./components/ProfileSection.vue";
 import WorkAndEduSection from "./components/workAndEduSection.vue";
 import ProjectSection from "./components/ProjectSection.vue";
 
-
 export default defineComponent({
   components: {
     ProfileSection,
@@ -53,6 +52,18 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 800px) {
+  #app {
+    font-family: "Microsoft YaHei";
+    width: 100vw;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+}
+
 .content {
   margin: 14px;
 }
@@ -61,9 +72,9 @@ i {
   padding: 2px;
   font-weight: 580;
   /* PDF使用 */
-  color: #333; 
+  color: #333;
   /* 网页使用 */
-  color: #FF6600;
+  color: #ff6600;
   font-style: normal;
 }
 </style>
