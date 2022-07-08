@@ -37,7 +37,29 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen, print and (min-width: 769px) {
+  .content {
+    font-size: 16px;
+  }
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    color: #666;
+    margin: 8px 0;
+  }
+
+  .profile li:not(:first-child) {
+    position: relative;
+  }
+
+  .profile li:not(:first-child)::before {
+    content: "|";
+    opacity: 0.6;
+    margin: 0 8px;
+  }
+}
+
+@media print and (max-width: 769px) {
   .content {
     font-size: 16px;
   }
@@ -60,7 +82,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .content {
+  .content {
     font-size: 14px;
   }
   .profile {

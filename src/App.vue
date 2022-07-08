@@ -38,7 +38,42 @@ ul,
 li {
   list-style: none;
 }
-@media screen and (min-width: 769px) {
+@media screen, print and (min-width: 769px) {
+  body {
+    background-color: #eee;
+    margin: 20px 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  #app {
+    font-family: "Microsoft YaHei";
+    width: 21cm;
+    min-height: 29.7cm;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em;
+    background-color: #fff;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  i {
+    padding: 2px;
+    font-weight: 580;
+    /* PDF使用 */
+    color: #333;
+    /* 网页使用 */
+    color: #ff6600;
+    font-style: normal;
+  }
+}
+
+@media print and (max-width: 769px) {
   body {
     background-color: #eee;
     margin: 20px 0;

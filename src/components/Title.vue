@@ -12,7 +12,22 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (min-width: 769px) {
+@media screen, print and (min-width: 769px) {
+  .title {
+    position: relative;
+    font-size: 24px;
+  }
+
+  .title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #eeeeee;
+    width: 100%;
+  }
+}
+@media print and (max-width: 769px) {
   .title {
     position: relative;
     font-size: 24px;
@@ -32,6 +47,7 @@ export default {
   .title {
     position: relative;
     font-size: 20px;
+    background-color: #fff;
   }
 
   .title::after {
