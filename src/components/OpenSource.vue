@@ -153,7 +153,7 @@ a {
 a::after {
   content: '点击可打开Demo';
   position: absolute;
-  top: 95%;
+  top: 49%;
   left: 0;
   width: 100%;
   font-size: 12px;
