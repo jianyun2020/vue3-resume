@@ -43,6 +43,11 @@ export default defineComponent({
 
 <style scoped>
 
+
+@media screen and (min-width: 768px) {
+  .content {
+    font-size: 16px;
+  }
 .title {
   display: flex;
   justify-content: space-between;
@@ -99,4 +104,65 @@ a::after {
   color: #666;
 }
 
+}
+@media screen and (max-width: 768px) {
+   .content {
+    font-size: 14px;
+  }
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+span {
+  color: #666;
+  
+}
+
+.sub-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.detail {
+  color: #666;
+}
+
+.third-content {
+  margin: 4px 0;
+}
+
+.third-content span:first-child {
+  font-weight: 550;
+}
+
+a {
+  position: relative;
+}
+
+.qrcode {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+a::after {
+  content: '点击可打开Demo';
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+}
 </style>

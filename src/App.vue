@@ -11,8 +11,8 @@ export default defineComponent({
     ProfileSection,
     WorkAndEduSection,
     ProjectSection,
-    OpenSource
-},
+    OpenSource,
+  },
   data() {
     return {
       data: data,
@@ -34,52 +34,65 @@ export default defineComponent({
   margin: 0;
   padding: 0;
 }
-ul,li {
+ul,
+li {
   list-style: none;
 }
-body {
-  background-color: #eee;
-  margin: 20px 0;
-}
+@media screen and (min-width: 769px) {
+  body {
+    background-color: #eee;
+    margin: 20px 0;
+  }
 
-p {
-  margin: 5px 0;
-}
+  p {
+    margin: 5px 0;
+  }
 
-#app {
-  font-family: "Microsoft YaHei";
-  width: 21cm;
-  min-height: 29.7cm;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 1em;
-  background-color: #fff;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 800px) {
   #app {
     font-family: "Microsoft YaHei";
-    width: 100vw;
+    width: 21cm;
+    min-height: 29.7cm;
     margin: 0 auto;
     overflow: auto;
     padding: 1em;
     background-color: #fff;
-    margin: 0 auto;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  i {
+    padding: 2px;
+    font-weight: 580;
+    /* PDF使用 */
+    color: #333;
+    /* 网页使用 */
+    color: #ff6600;
+    font-style: normal;
   }
 }
 
-.content {
-  margin: 10px;
-}
+@media screen and (max-width: 768px) {
+  #app {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 10px;
+    background-color: #fff;
+  }
 
-i {
-  padding: 2px;
-  font-weight: 580;
-  /* PDF使用 */
-  color: #333;
-  /* 网页使用 */
-  color: #ff6600;
-  font-style: normal;
+  .content {
+    margin: 4px;
+  }
+
+  i {
+    padding: 2px;
+    font-weight: 580;
+    /* PDF使用 */
+    color: #333;
+    /* 网页使用 */
+    color: #ff6600;
+    font-style: normal;
+  }
 }
 </style>

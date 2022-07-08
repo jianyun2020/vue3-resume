@@ -37,15 +37,33 @@ export default defineComponent({
 </template>
 
 <style scoped>
+
 .title {
   display: flex;
   justify-content: space-between;
 }
 
-.subtitle {
+@media screen and (min-width: 769px) {
+  .subtitle {
   font-size: 20px;
   font-weight: 600;
   color: #666;
+}
+
+.content {
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+.content {
+  font-size: 14px;
+}
 }
 
 span {

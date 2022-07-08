@@ -32,25 +32,52 @@ export default defineComponent({
 </template>
 
 <style scoped>
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  color: #666;
-  margin: 8px 0;
-}
-
-.profile li:not(:first-child) {
-  position: relative;
-}
-
-.profile li:not(:first-child)::before {
-  content: "|";
-  opacity: 0.6;
-  margin: 0 8px;
-}
-
 a {
   color: #666;
   text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+  .content {
+    font-size: 16px;
+  }
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    color: #666;
+    margin: 8px 0;
+  }
+
+  .profile li:not(:first-child) {
+    position: relative;
+  }
+
+  .profile li:not(:first-child)::before {
+    content: "|";
+    opacity: 0.6;
+    margin: 0 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+    font-size: 14px;
+  }
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    color: #666;
+    margin: 4px 0;
+  }
+
+  .profile li:not(:first-child) {
+    position: relative;
+  }
+
+  .profile li:not(:first-child)::before {
+    content: "|";
+    opacity: 0.6;
+    margin: 0 4px;
+  }
 }
 </style>
