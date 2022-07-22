@@ -20,7 +20,7 @@ export default defineComponent({
       <li>{{ profile?.age }}岁</li>
       <li>{{ profile?.targetPost }}</li>
       <li>
-        <a :href="profile?.targetPost">在线简历：{{ profile?.onlineResume }}</a>
+        <a :href="profile?.onlineResume">在线简历：{{ profile?.onlineResume }}</a>
       </li>
     </ul>
     <ul class="profile">

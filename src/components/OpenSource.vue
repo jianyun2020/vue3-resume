@@ -18,7 +18,7 @@ export default defineComponent({
   <Title :title-name="classification" />
   <div class="content" v-for="item in project">
       <div class="title">
-        <a :href="item.link" target="__blank"><h2 class="subtitle">{{ item.title }}</h2></a>
+        <a :href="item.link" target="__blank" title="点击打开链接"><h2 class="subtitle">{{ item.title }}</h2></a>
       </div>
     <div class="sub-content">
       <div>
