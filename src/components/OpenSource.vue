@@ -18,7 +18,7 @@ export default defineComponent({
   <Title :title-name="classification" />
   <div class="content" v-for="item in project">
       <div class="title">
-        <h2 class="subtitle">{{ item.title }}</h2>
+        <a :href="item.link" target="__blank"><h2 class="subtitle">{{ item.title }}</h2></a>
       </div>
     <div class="sub-content">
       <div>
@@ -26,16 +26,21 @@ export default defineComponent({
           <p v-html="detail"></p>
         </p>
       </div>
-      <div v-if="item.link">
+      <!-- <div v-if="item.link">
         <a :href="item.link" target="__blank">
           <QrcodeVue class="qrcode" :value="item.link" />
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <style scoped>
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media screen, print and (min-width: 769px) {
   .content {
     font-size: 16px;
@@ -66,7 +71,7 @@ a {
   cursor: pointer;
   margin: 10px 0;
 }
-a::after {
+/* a::after {
   content: '点击可打开Demo';
   position: absolute;
   top: 95%;
@@ -75,7 +80,7 @@ a::after {
   font-size: 12px;
   text-align: center;
   color: #666;
-}
+} */
 }
 
 @media print and (max-width: 769px) {
@@ -150,7 +155,7 @@ a {
   cursor: pointer;
   margin: 5px 0;
 }
-a::after {
+/* a::after {
   content: '点击可打开Demo';
   position: absolute;
   top: 49%;
@@ -159,6 +164,6 @@ a::after {
   font-size: 12px;
   text-align: center;
   color: #666;
-}
+} */
 }
 </style>

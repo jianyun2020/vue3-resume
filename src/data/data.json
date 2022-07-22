@@ -42,7 +42,7 @@
         },
         {
           "subtitle": "涉及到的技术",
-          "content": "主要使用了<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>Axios</i>、<i>React Query</i>、<i>Webpack</i>、<i>ECharts</i>等技术。"
+          "content": "主要使用了<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>Axios</i>、<i>Webpack</i>、<i>ECharts</i>等技术。"
         },
         {
           "subtitle": "工作内容",
@@ -78,8 +78,9 @@
       "startTime": "",
       "endTime": "",
       "content": [
-        "项目介绍：该项目仿照Jira Software，实现了其中部分功能。",
-        "技术栈：<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>React Query</i>、<i>Webpack</i>、<i>TypeScript</i>"
+        "项目介绍：该项目模仿Jira Software，实现了简单的项目和任务管理",
+        "使用技术：<i>React</i>、<i>Hooks</i>、<i>React Router</i>、<i>React Query</i>、<i>Webpack</i>、<i>TypeScript</i>",
+        "除了必要的class组件，其余组件全部使用函数组件，使用<i>Context</i>以及Hook管理全局状态，通过<i>Service Worker</i>拦截网络请求，模拟后端接口效果。样式尝试使用CSS-in-JS的方式，结合Ant Design组件库。使用<i>React Query</i>获取模拟的远程数据。"
       ]
     }
   ],
@@ -88,9 +89,9 @@
       "title": "",
       "link": "",
       "content": [
-        "熟练掌握<i>React</i>全家桶，包括<i>Hooks</i>、<i>React Router</i>、<i>Redux</i>、<i>React Query</i>等技术的使用",
-        "熟练掌握<i>JavaScript</i>、<i>TypeScript</i>、<i>HTML5</i>和<i>CSS3</i>等技术的使用",
-        "掌握<i>Axios</i>、<i>Webpack</i>、<i>Less</i>、<i>Sass</i>、<i>Styled Components</i>等技术的使用"
+        "熟练掌握<i>React</i>全家桶，包括<i>Hooks</i>、<i>React Router</i>、<i>Redux</i>、<i>React Query</i>等技术",
+        "熟练掌握<i>JavaScript</i>、<i>TypeScript</i>、<i>HTML5</i>和<i>CSS3</i>等技术",
+        "了解<i>Axios</i>、<i>Webpack</i>、<i>Less</i>、<i>Sass</i>等技术"
       ]
     }
   ]
