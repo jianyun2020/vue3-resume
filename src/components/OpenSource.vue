@@ -113,7 +113,7 @@ a {
   cursor: pointer;
   margin: 10px 0;
 }
-a::after {
+/* a::after {
   content: '点击可打开Demo';
   position: absolute;
   top: 95%;
@@ -122,7 +122,7 @@ a::after {
   font-size: 12px;
   text-align: center;
   color: #666;
-}
+} */
 }
 
 @media screen and (max-width: 768px) {
